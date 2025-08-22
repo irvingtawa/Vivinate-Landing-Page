@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve8 Enterprises</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from the CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apply Inter font to the entire body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom background gradient for the hero section */
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-3xl font-bold text-teal-400">Evolve8</div>
+            <!-- Optional: Navigation links for later -->
+            <!-- <nav>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">About</a>
+            </nav> -->
+        </div>
+    </header>
+
+    <!-- Hero Section: Main pitch and call to action -->
+    <main>
+        <section class="hero-bg text-center py-20 px-4 md:py-32 rounded-b-3xl">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white mb-4 drop-shadow-md">
+                    Fueling Civic Innovation and Growth.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 font-light max-w-3xl mx-auto mb-8">
+                    We drive change by integrating advanced technology with strategic community solutions.
+                </p>
+                <!-- Call to action for investors -->
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    Connect with Us
+                </a>
+            </div>
+        </section>
+
+        <!-- "What We Do" Section -->
+        <section class="py-20 px-4">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">What We Do</h2>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    Evolve8 is a civic tech organization dedicated to solving complex urban and community challenges. We build data-driven solutions and foster partnerships to create more efficient, equitable, and sustainable cities.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-700">
+                        <h3 class="text-2xl font-semibold text-teal-300 mb-2">The Problem We Solve</h3>
+                        <p class="text-gray-400">
+                            Many civic sectors struggle with outdated systems, inefficient processes, and a lack of data-driven insights. This hinders progress and limits the potential for meaningful community impact.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-700">
+                        <h3 class="text-2xl font-semibold text-teal-300 mb-2">Our Solution</h3>
+                        <p class="text-gray-400">
+                            We develop and implement innovative technological tools that streamline operations, improve public services, and provide decision-makers with the data they need to build smarter communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-20 px-4">
+            <div class="container mx-auto max-w-xl bg-gray-800 p-8 md:p-12 rounded-lg shadow-2xl border border-gray-700">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-6">Let's Connect</h2>
+                <p class="text-gray-400 text-center mb-8">
+                    We're actively seeking partners and investors who share our vision. Fill out the form below and we'll be in touch.
+                </p>
+
+                <!-- 
+                    This form is set up to work seamlessly with Netlify Forms. 
+                    You just need to add the 'data-netlify="true"' attribute to the form tag.
+                    The 'netlify' hidden input is also recommended.
+                    After deploying, Netlify will automatically handle the form submissions,
+                    and you can view them in your Netlify dashboard.
+                -->
+                <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <div>
+                        <label for="name" class="block text-gray-300 font-semibold mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="[Your Name]" required class="w-full bg-gray-900 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors duration-200">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-gray-300 font-semibold mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="[Your Email]" required class="w-full bg-gray-900 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors duration-200">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-gray-300 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="[Your Message]" required class="w-full bg-gray-900 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors duration-200"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="w-full md:w-auto bg-teal-500 hover:bg-teal-400 text-gray-900 font-bold py-3 px-12 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm py-6">
+        <p>&copy; <span id="current-year"></span> Evolve8 Enterprises. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to update the current year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
