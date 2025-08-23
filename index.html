@@ -168,15 +168,54 @@
         </section>
     </main>
 
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="text-center text-[#C0B9A8] text-sm py-6">
         <p>&copy; <span id="current-year"></span> Vivinate Farms. All Rights Reserved.</p>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+            <!-- Location -->
+            <div class="flex items-center gap-2">
+                <!-- Location Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 
+                    0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                </svg>
+                Dallas, TX 75225
+            </div>
+
+            <!-- Phone -->
+            <a href="tel:4698482648" class="flex items-center gap-2 hover:text-[#A08E73] transition-colors duration-200">
+                <!-- Phone Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.478 15.478 0 006.59 6.59l2.2-2.2a1 
+                    1 0 011.11-.21c1.2.48 2.52.74 3.88.74.6 0 
+                    1.08.48 1.08 1.08v3.42c0 .6-.48 1.08-1.08 
+                    1.08C10.29 21.5 2.5 13.71 2.5 
+                    4.08c0-.6.48-1.08 1.08-1.08H7c.6 0 
+                    1.08.48 1.08 1.08 0 1.36.26 2.68.74 
+                    3.88.17.39.08.84-.21 1.11l-2.2 2.2z"/>
+                </svg>
+                (469) 848-2648
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/vivinate-farms/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-[#A08E73] transition-colors duration-200">
+                <!-- LinkedIn Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.238-5 5v14c0 
+                    2.762 2.239 5 5 5h14c2.762 0 5-2.238 
+                    5-5v-14c0-2.762-2.238-5-5-5zm-11 
+                    19h-3v-10h3v10zm-1.5-11.268c-.966 
+                    0-1.75-.79-1.75-1.764s.784-1.764 
+                    1.75-1.764 1.75.79 1.75 
+                    1.764-.784 1.764-1.75 
+                    1.764zm13.5 11.268h-3v-5.604c0-1.337-.025-3.059-1.865-3.059-1.867 
+                    0-2.153 1.459-2.153 
+                    2.968v5.695h-3v-10h2.884v1.367h.041c.401-.759 
+                    1.379-1.562 2.84-1.562 3.04 0 
+                    3.593 2.004 3.593 4.609v5.586z"/>
+                </svg>
+                LinkedIn
+            </a>
+        </div>
     </footer>
-
-    <!-- JavaScript to update the current year -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-
-</body>
-</html>
