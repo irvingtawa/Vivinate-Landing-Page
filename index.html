@@ -1,221 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivinate Farms</title>
-    <!-- Use the Inter font from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Load Tailwind CSS from the CDN for easy styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Apply Inter font to the entire body */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom background gradient for the hero section, using deep forest tones */
-        .hero-bg {
-            background: linear-gradient(135deg, #0A1A12 0%, #173628 100%);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivinate Farms | Cultivating Resilience</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #2d572c;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      height: 100vh;
+      background: url('vivinate%20logo.jpg') no-repeat center/contain, linear-gradient(to right, #4caf50, #2d572c);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero a {
+      background: #fff;
+      color: #2d572c;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2d572c;
+    }
+    .team, .products, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    .contact form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact button {
+      padding: 10px;
+      border: none;
+      background: #2d572c;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background: #2d572c;
+      color: white;
+      padding: 20px;
+    }
+  </style>
 </head>
-<body class="bg-[#102219] text-[#E8E4D5]">
+<body>
+  <header>
+    <div>Vivinate Farms</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#products">Products</a>
+      <a href="#projects">Projects</a>
+      <a href="#surveys">Surveys</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Header & Navigation -->
-    <header class="p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-3xl font-bold text-[#A08E73]">Vivinate Farms</div>
-        </div>
-    </header>
+  <section class="hero" id="hero">
+    <h1>Cultivating Resilience Through Urban Farming</h1>
+    <p>Combating food insecurity with innovative, sustainable farming solutions.</p>
+    <a href="https://calendly.com/tawannatirving/discovery" target="_blank">Schedule a Call</a>
+  </section>
 
-    <!-- Hero Section: Main pitch and call to action -->
-    <main>
-        <section class="hero-bg text-center py-20 px-4 md:py-32 rounded-b-3xl shadow-xl">
-            <div class="container mx-auto">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-[#E8E4D5] mb-4 drop-shadow-md">
-                    Cultivating Nature's Bounty.
-                </h1>
-                <p class="text-xl md:text-2xl text-[#C0B9A8] font-light max-w-3xl mx-auto mb-8">
-                    Harvesting fresh, delicious mushrooms and microgreens with sustainable, ethical practices.
-                </p>
-                <!-- Call to action button -->
-                <a href="#products" class="bg-[#3B664B] hover:bg-[#528461] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                    Explore Our Harvest
-                </a>
-            </div>
-        </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Vivinate Farms is dedicated to addressing food insecurity through hyper-local, sustainable farming. By integrating hydroponics, container farming, and educational initiatives, we empower communities with access to fresh produce, healthy living skills, and innovative farming practices.</p>
+  </section>
 
-        <!-- "Our Philosophy" Section -->
-        <section class="py-20 px-4">
-            <div class="container mx-auto max-w-4xl text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#A08E73] mb-6">Our Philosophy</h2>
-                <p class="text-[#C0B9A8] text-lg mb-8 leading-relaxed">
-                    At Vivinate Farms, we believe in a deep connection to the earth. Our cultivation process is a delicate art, mimicking the natural environment of our crops to produce the highest quality and most flavorful mushrooms. We are committed to sustainability, from our soil to your plate.
-                </p>
-                <div class="grid md:grid-cols-2 gap-8 text-left">
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-[#2B4E38]">
-                        <h3 class="text-2xl font-semibold text-[#E8E4D5] mb-2">Sustainable Cultivation</h3>
-                        <p class="text-[#C0B9A8]">
-                            We use closed-loop systems and organic substrates to minimize waste and ensure our farming practices are as kind to the planet as our mushrooms are to your palate.
-                        </p>
-                    </div>
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-[#2B4E38]">
-                        <h3 class="text-2xl font-semibold text-[#E8E4D5] mb-2">Unmatched Quality</h3>
-                        <p class="text-[#C0B9A8]">
-                            Each batch is grown with care and attention, resulting in exceptional flavor, texture, and nutritional value. We never compromise on quality.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="card"><h3>Farm Manager</h3><p>Oversees daily operations and ensures efficient farm management.</p></div>
+      <div class="card"><h3>Farm Technicians</h3><p>Specialists in hydroponics, mushroom cultivation, and container farming systems.</p></div>
+      <div class="card"><h3>Community Outreach & Education Coordinator</h3><p>Connects with local organizations and leads workshops and educational programs.</p></div>
+      <div class="card"><h3>Marketing & Sales Lead</h3><p>Drives awareness, manages CSA memberships, and builds partnerships with restaurants and institutions.</p></div>
+    </div>
+  </section>
 
-        <!-- Product Showcase Section -->
-        <section id="products" class="py-20 px-4">
-            <div class="container mx-auto max-w-4xl text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#A08E73] mb-8">Our Harvest</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Product Card 1 -->
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 border border-[#2B4E38]">
-                        <div class="text-5xl mb-4" role="img" aria-label="Mushroom emoji">🍄</div>
-                        <h3 class="text-xl font-semibold text-[#E8E4D5] mb-2">Gourmet Mushrooms</h3>
-                        <p class="text-[#C0B9A8] text-sm">
-                            From delicate oyster mushrooms to rich shiitake, our selection offers a taste of the forest.
-                        </p>
-                    </div>
-                    <!-- Product Card 2 -->
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 border border-[#2B4E38]">
-                        <div class="text-5xl mb-4" role="img" aria-label="Sprout emoji">🌱</div>
-                        <h3 class="text-xl font-semibold text-[#E8E4D5] mb-2">Microgreens</h3>
-                        <p class="text-[#C0B9A8] text-sm">
-                            Packed with flavor and nutrients, our microgreens add a vibrant touch to any dish.
-                        </p>
-                    </div>
-                    <!-- Product Card 3 -->
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 border border-[#2B4E38]">
-                        <div class="text-5xl mb-4" role="img" aria-label="Leafy green emoji">🥬</div>
-                        <h3 class="text-xl font-semibold text-[#E8E4D5] mb-2">Heirloom Vegetables</h3>
-                        <p class="text-[#C0B9A8] text-sm">
-                            Seasonal specialties grown with the same care and respect for nature.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="products">
+    <h2>Our Products & Services</h2>
+    <div class="products">
+      <div class="card"><h3>Fresh Produce</h3><p>Leafy greens, herbs, and mushrooms grown locally with sustainable practices.</p></div>
+      <div class="card"><h3>CSA Program</h3><p>Weekly farm shares that connect families with seasonal, nutritious produce.</p></div>
+      <div class="card"><h3>Wholesale Supply</h3><p>Partnering with restaurants, schools, and institutions to provide fresh, local food.</p></div>
+      <div class="card"><h3>Mobile Markets</h3><p>Bringing produce directly into underserved neighborhoods.</p></div>
+      <div class="card"><h3>Education & Cooking Classes</h3><p>Hands-on experiences teaching nutrition, cooking, and sustainable farming practices.</p></div>
+    </div>
+  </section>
 
-        <!-- START OF NEW SECTION: COMMUNITY SURVEYS -->
-        <section id="surveys" class="py-20 px-4">
-            <div class="container mx-auto max-w-4xl text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#A08E73] mb-6">Community Surveys</h2>
-                <p class="text-[#C0B9A8] text-lg mb-8 leading-relaxed">
-                    We're working to expand our community initiatives. Your feedback is vital to help us understand local needs. Please take a moment to complete one of our surveys below.
-                </p>
-                <div class="grid md:grid-cols-3 gap-8 text-left">
-                    <!-- Survey Card 1 -->
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 border border-[#2B4E38]">
-                        <h3 class="text-xl font-semibold text-[#E8E4D5] mb-4">Skincare & Wellness</h3>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSesIM_js_0P_Wki-KJMj4O_UWWqd0cHgsnE5U71pS0CK6IogA/viewform?usp=header" target="_blank" class="block w-full text-center bg-[#3B664B] hover:bg-[#528461] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                            Take Survey
-                        </a>
-                    </div>
-                    <!-- Survey Card 2 -->
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 border border-[#2B4E38]">
-                        <h3 class="text-xl font-semibold text-[#E8E4D5] mb-4">Food Access Initiative</h3>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSexJYMU62QsOYpAB8jQyHHlIESuIGuHpS5iRSFMOy0Djj4d7w/viewform?usp=header" target="_blank" class="block w-full text-center bg-[#3B664B] hover:bg-[#528461] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                            Take Survey
-                        </a>
-                    </div>
-                    <!-- Survey Card 3 -->
-                    <div class="bg-[#173628] p-6 rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 border border-[#2B4E38]">
-                        <h3 class="text-xl font-semibold text-[#E8E4D5] mb-4">Haircare & Wellness</h3>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1CasIY2m4-vBSLedG4ZZ1VvbMuIVhEG29xXd95XiRv6Q9xA/viewform?usp=header" target="_blank" class="block w-full text-center bg-[#3B664B] hover:bg-[#528461] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                            Take Survey
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END OF NEW SECTION -->
+  <section id="projects">
+    <h2>Upcoming Projects</h2>
+    <div class="projects">
+      <div class="card"><h3>Healthy Vending Machines</h3><p>Introducing fresh food options in schools and workplaces.</p></div>
+      <div class="card"><h3>Container Farm Expansion</h3><p>Scaling production through modular, urban-friendly farms.</p></div>
+      <div class="card"><h3>Specialty Mushrooms</h3><p>Growing high-value mushrooms for culinary and health markets.</p></div>
+      <div class="card"><h3>Community Training</h3><p>Launching workforce development programs in urban agriculture.</p></div>
+    </div>
+  </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact" class="py-20 px-4">
-            <div class="container mx-auto max-w-xl bg-[#173628] p-8 md:p-12 rounded-lg shadow-2xl border border-[#2B4E38]">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#A08E73] text-center mb-6">Stay in the Loop</h2>
-                <p class="text-[#C0B9A8] text-center mb-8">
-                    Sign up for our newsletter to get updates on new products and learn more about our farming practices.
-                </p>
-                <!-- START OF NETLIFY-SPECIFIC CODE -->
-                <!-- The 'name' attribute is important for Netlify to identify the form. -->
-                <!-- The 'data-netlify="true"' attribute is what tells Netlify to process the form submission. -->
-                <form name="newsletter" method="POST" data-netlify="true" class="space-y-6">
-                    <!-- This hidden input field is crucial. It must match the value of the 'name' attribute on the form. -->
-                    <input type="hidden" name="form-name" value="newsletter">
+  <section id="surveys">
+    <h2>Community Surveys</h2>
+    <p>We want to hear from you! Share your thoughts and help shape the future of food access in your community. [Survey links to be added]</p>
+  </section>
 
-                    <div>
-                        <label for="email" class="block text-[#C0B9A8] font-semibold mb-2">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="[Your Email]" required class="w-full bg-[#102219] text-white p-3 rounded-md border border-[#2B4E38] focus:outline-none focus:ring-2 focus:ring-[#528461] transition-colors duration-200">
-                    </div>
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">
+      Prefer a call? <a href="https://calendly.com/tawannatirving/discovery" target="_blank">Schedule here</a>.
+    </p>
+  </section>
 
-                    <div class="text-center">
-                        <button type="submit" class="w-full md:w-auto bg-[#3B664B] hover:bg-[#528461] text-white font-bold py-3 px-12 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
-                <!-- END OF NETLIFY-SPECIFIC CODE -->
-            </div>
-        </section>
-    </main>
-
-        <!-- Footer -->
-    <footer class="text-center text-[#C0B9A8] text-sm py-6">
-        <p>&copy; <span id="current-year"></span> Vivinate Farms. All Rights Reserved.</p>
-
-        <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
-            <!-- Location -->
-            <div class="flex items-center gap-2">
-                <!-- Location Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 
-                    0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
-                </svg>
-                Dallas, TX 75225
-            </div>
-
-            <!-- Phone -->
-            <a href="tel:4698482648" class="flex items-center gap-2 hover:text-[#A08E73] transition-colors duration-200">
-                <!-- Phone Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6.62 10.79a15.478 15.478 0 006.59 6.59l2.2-2.2a1 
-                    1 0 011.11-.21c1.2.48 2.52.74 3.88.74.6 0 
-                    1.08.48 1.08 1.08v3.42c0 .6-.48 1.08-1.08 
-                    1.08C10.29 21.5 2.5 13.71 2.5 
-                    4.08c0-.6.48-1.08 1.08-1.08H7c.6 0 
-                    1.08.48 1.08 1.08 0 1.36.26 2.68.74 
-                    3.88.17.39.08.84-.21 1.11l-2.2 2.2z"/>
-                </svg>
-                (469) 848-2648
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/company/vivinate-farms/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-[#A08E73] transition-colors duration-200">
-                <!-- LinkedIn Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.238-5 5v14c0 
-                    2.762 2.239 5 5 5h14c2.762 0 5-2.238 
-                    5-5v-14c0-2.762-2.238-5-5-5zm-11 
-                    19h-3v-10h3v10zm-1.5-11.268c-.966 
-                    0-1.75-.79-1.75-1.764s.784-1.764 
-                    1.75-1.764 1.75.79 1.75 
-                    1.764-.784 1.764-1.75 
-                    1.764zm13.5 11.268h-3v-5.604c0-1.337-.025-3.059-1.865-3.059-1.867 
-                    0-2.153 1.459-2.153 
-                    2.968v5.695h-3v-10h2.884v1.367h.041c.401-.759 
-                    1.379-1.562 2.84-1.562 3.04 0 
-                    3.593 2.004 3.593 4.609v5.586z"/>
-                </svg>
-                LinkedIn
-            </a>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2025 Vivinate Farms | Dallas, TX | (469) 848-2648 | info@vivinatefarms.com | LinkedIn</p>
+  </footer>
+</body>
+</html>
